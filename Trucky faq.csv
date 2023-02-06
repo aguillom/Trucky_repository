@@ -1,0 +1,317 @@
+﻿How can I request an admin account with Faros?,"
+Click on the link"
+"How can I request view and follow up role with Faros?
+#VFU","
+Click on the link"
+"How to assign a training?
+#LAT","There are two ways:
+
+DIRECT ASSIGNMENT
+Via Global Search. “Request” is to request the training for yourself. The manager can “assign” trainings to his team members. TCA can assign all in dealership. Always make sure to use the session when assigning an ILT. Assigning the event will only add the training to the end user - with no date defined.
+
+LAT
+Learning Assignment Tool is a tool to enroll a large number of users to one or several trainings. It can be scheduled or immediate, run once or dynamically. Recommended when assigning a training path to a job role. Learning Assigment Tool is used by TC and admin (both central admin and market admin).
+"
+Is it possible to bulk remove a Certification?,"Yes. The Certification Bulk Removal tool allows administrators to remove users from a certification in bulk. Using this tool, administrators can populate a CSV file with the Certification ID and multiple User IDs, then upload this CSV file to the system and allow the users to be processed for bulk removal from the certification.
+
+Only one certification can be processed per file. If you need to remove users in bulk from more than one certification, you will need to create a separate CSV file for each certification. The maximum file size is 1MB, and one file can be uploaded at a time. Both inactive and active users included in the certification removal file will be removed from the certification."
+"What are ""elastic search"" rules?","Search logic:
+o the new search logic will consider the following Event fields: Event Title, Event
+Description, Event Keywords.
+o the new search will accept special characters (see list below). Those special
+characters are considered as a “break” between two words.
+!""#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+o the new search logic will consider all and part of the searched term, even if there
+is an exact match. For example: searching for Product Management will not only
+return the Product Management event, but also for Events containing Product
+and Management separately.
+• Search results display:
+o There are no events listed on the page until a search is performed.
+The search results will be listed by relevancy.
+To calculate the relevancy, the fields are weighted as follows: title 1000,
+description 2 and keyword 1. If no search text is given, there is no relevancy
+calculation.
+o When using the Vendor or Subject dropdown, the results are not listed
+alphabetically. They are listed based on an index ID attributed to each LO by
+Elastic Search.
+o When clicking the search button without any search term, the results are not
+listed alphabetically. They are listed based on an index ID attributed to each LO
+by Elastic Search.
+o Elastic Search currently doesn’t cover inactive events
+
+
+
+Out of scope:
+Search for all Sessions
+- Search including inactive events (inactive events will be retrieved using SQL)
+- Fuzzy search (e.g. Searching for “Traning” instead of “Training” will not return results)
+- “Contains” search is not supported. If you search for “Ship”, the events containing
+“Leadership” will not be returned. We support starts with search, i.e. Searching for
+“Leader” will return any event that contains a word starting with “Leader” (e.g.
+Leadership Essentials, Growing your Leadership)"
+What are basic employee actions?,"Search, request, register, be waitlisted, express interest, complete training, evaluate"
+What are basic manager actions?,"Assign trainings, approve or deny training requests, view the team, track team's training completion"
+"What are basic training coordinators actions?
+#TC","Assign trainings via global search or with Learning Assignment Tool, approve or deny training requests, view the team, track team's training completion, in copy of emails"
+"What are Navigator master user data?
+# BALDO #SAP #CTDI","BALDO:
+Creation/inactivation of external users 
+Retail job role (internal and external users)
+Training Coordinator information (internal and external users)
+
+SAP HR (Internals only):
+Creation/inactivation users
+Consultants (C001 & C002 only)
+Organizational structure
+
+CTDI
+Internal & External: Dealer organizational structure
+Dealer Brand – inherited to user"
+What are the common user training record status?,"Pending approval – Manager or Training Coordinator needs to approve request.
+Approved – Manager has approved employee’s request (tick box ”Register on approval” not set)
+Registered – request has been approved and participant has received confirmation email
+Started – participant has started taking the curriculum or online course
+Pending prior training - The LO can not be started until the LO prior in sequence has been completed (applicable for curriculum)
+Completed – attendance has been marked and also level 1 evaluation has been submitted (if used)
+Not activated – Status for events in training paths if student is not registered yet (tick box ”Auto-register” not set)
+Exempt – Status for LO's where market admin decides that student is competent and therefore training is not needed/exempted
+Completed equivalent – A new version of an e-learning/test has been published where the student has already completed the former version"
+"What are the difference between central, local and TC  role?","CENTRAL admin
+Create and edit central training
+Assign training to the whole retail population
+Manage users in the whole retail population
+Report on the whole retail population
+
+LOCAL market admin
+Create and edit local trainings
+Assign training to the local market population
+Manage users in the local market population
+Report on the local market population 
+
+TC
+Assign training to the dealer/(team)
+Manage users in the dealer/(team)
+Report on the dealer/(team) "
+"What are the different certification validity options?
+#Certification","No validity period defined - This is the default option. The training item is always valid towards the certification. This option is appropriate if the skills and knowledge in the item is not outdated over any renewal periods and do not need to be refreshed. Note: For the item to be used to satisfy requirements for renewal periods, you must also select the Allow training items acquired from previous periods to satisfy requirement if training item is valid option when configuring the training period.
+
+On the period start date, this item is completed within the past XX days, months, years - When the certification period begins, the system checks if this item is complete. The item must have been completed within the specified amount of time prior to the certification period start date or during the certification period. For example, if this option is selected and set to 2 years, the user must have satisfied the requirement within the previous two years prior to the start of the certification period or during the certification period.
+
+By the Certification Period end date, this item is valid if completed within the past XX days, months, years - According to the specified time period for this option, prior to the end of the certification period the system checks if this item is complete. If this item is completed outside of the specified period, the user does not receive credit for completing the item. For example, if this option is selected and set to 10 days, the user must satisfy the requirement within 10 days of the end of the certification period. If they completed the item 14 days prior to the end of the period, they receive no credit and they must complete the item again within 10 days of the end of the period.
+
+The item is completed after the indicated date - If the item was completed after the specified date, the requirement is satisfied."
+"What are the different enrollment settings available while setting a Proxy Enrollment?
+#Certification","Standard - This option enrolls all users that are selected in the Upload Users or Select Users sections as soon as the enrollment begins, but no additional users are added to the proxy enrollment after the initial assignment. For example, if a new user is added to the system after the initial assignment that matches the selection criteria, they are not enrolled in the certification. To receive the assignment the user must meet the availability criteria and must not have the training in their transcript. Users are intentionally excluded from the proxy enrollment assignment when they have the training already on the transcript for a standard proxy enrollment.
+
+Dynamic - This option enrolls all users that are selected in the Upload Users or Select Users sections as soon as the enrollment begins, and if any users match the selection criteria after the initial assignment, they are dynamically assigned to the proxy enrollment. For example, if a new user is added to the system after the initial assignment that matches the selection criteria, they are dynamically enrolled in the certification. Note: For dynamic proxy enrollments, users with permission to set the dynamic removal for a certification proxy enrollment have the option to dynamically remove users from this type of certification from the Proxy Enrollment page.
+
+Certified - This option certifies all users that are selected in the Upload Users or Select Users sections. The certification appears on the user's transcript and the status is Certified. If there is a renewal period, the user is placed in the appropriate renewal period. The administrator can then edit the renewal period due date and expiration date. They can also modify the amount of credits required to satisfy the first renewal period. This option is only available if you have permission to enroll certified users into a certification. If a user is enrolled as Certified into a one-time certification or any certification without a renewal period, the expiration and due date will match because as there is no re-certification period for the certification, and will not expire. Note: This option is not available for certifications with a Relative with Rolling Period renewal setup."
+"What are the different option using dynamic removal?
+#LAT","Remove In Progress Training - To remove training that has already been started, in addition to training that has not been started, toggle this option to the On position. This option is disabled by default. 
+
+Remove Training within Curricula - Selecting this option allows the child LOs of a curriculum to be removed from users' training record  (removed tab). They will otherwise remain as stand-alone LOs on the user’s training record (active tab). This option is disabled by default. 
+
+Note: The “Remove training within Curricula” option ONLY appears if a curriculum has been selected within the learning assignment. 
+The STRONG recommendation is to have all the check boxes above."
+"What are the different training path levels?
+#curriculum","Onboarding
+These trainings give you general knowledge that is not linked to a specific job role.  
+
+Basic
+These trainings are preferably the first to complete and designed for your job role.
+
+Intermediate (Technical only)
+These trainings are build-on to Basic level and designed for your job role.
+
+Advanced 
+These trainings are build-on to (Basic for Commercial, Intermediate for technical) level and designed for your job role.
+
+Optional
+These trainings are not strictly necessary for your job role and can be taken on an interest basis.
+
+QR Training
+The Qualitative Requirements (QR) training path contains all trainings which are the required minimum level according to the Volvo Truck dealer contract. These trainings are available in your role-based training path and the completion status is synchronized with the QR Training path and followed up at the quality audit. "
+What are the different training record sections?,"Active – trainings assigned to the user or started by user
+Completed - all completed trainings
+Archived - inactive trainings or trainings manually moved to archive by the user
+Removed - Market admin function to remove/hide trainings from training record (not visible for end user)"
+What are the features available for market Basic role?,"Market View & Follow Up role +:
+Manage venues
+Manage trainers on vendors
+Manage ILT, Sessions, Material, Video and Test
+View local curriculum
+Manage evaluations
+Add External training
+Withdraw/Exempt/Complete users
+Remove/archive training from user record
+Standard Learning Assignment tool
+Additional reports"
+What are the features available for market Curriculum role?,"Market Basic role +: 
+Create curriculum
+Create dynamic Learning assignments
+Additional reports"
+What are the features available for market Key user role?,"Market Curriculum role +:
+Merge users
+Training Update Tool
+Training Removal Tool
+Create groups"
+"What are the features available for market View & Follow Up role?
+#VFU","Search and view users 
+Search and view central training catalogue
+Create and view reports"
+What are the possible actions on a user's training record?,"Administrators can:
+Withdraw
+Replace
+Remove (not recommended if registered to a session)
+Mark exempt
+Archive
+
+Training Coordinators and Managers can:
+Withdraw
+Replace
+
+End users can:
+Withdraw
+Archive"
+"What are the possible roles to request in Faros?
+#Admin","For local market admins:	
+01. Navigator Retail Learning; Market View & Report: View users and report on them in your market
+02. Navigator Retail Learning; Market Administrator: Create and edit learning objects
+03. Navigator Retail Learning; Curricula admin: Create and edit training paths
+04. Navigator Retail Learning; Market Key user: Access to removal, update and merge tool
+05. Navigator Retail Learning; Certification: Create and edit certification paths
+06. Navigator Retail Learning; Extended Trainer: Manage roster, test, events & sessions
+09. Navigator Retail Learning; Content Uploader: Upload local scorm e-learnings
+
+To be used for central admins only:	
+07. Navigator Retail Learning; Central administrator: Administrate all central content
+08. Navigator Retail Learning; Global View & Follow up: View users and report worldwide"
+What are the versioning changes?,"Version support exist for E-learnings, test, material and Curriculum. If content is changed and the LO is assigned to a user = LO is versioned. If you change general information, like title or description a new version is not created. New versions are created if structure is changed (e.g. ad new questions to a test). When a new version is created, the administrator shall state if the new version is to be re-taken by the users or if they are considered Completed Equivalent. As default, choose Completed equivalent, to keep completed user records complete. For Material versioning: always use Replace."
+What are trainer role and permissions?,"When you add a user as a trainer to a vendor, the user is automatically granted a number of persmissions:
+View Events for the specified vendor
+View Sessions where set as trainer
+View Waitlists
+View Interest lists
+View Test Engine
+
+To be able to manage content, i.e. to create Events or Sessions, additional security roles are required."
+"What is a Curriculum?
+#training path","What is a Curriculum? Curricula are a bundle of trainings but they behave like one training. They are used when you have blended learning paths or when you need to control a specific flow of learning as you can determine the order in which these learning objects need to be taken. 
+
+Bundle of trainings
+Behaves as one training
+Controlled Learning Paths
+
+When to use a Curriculum:
+When you have a defined group of trainings that should be considered as one trainings. 
+When you have a defined group of ltrainings that should be taken in certain order (Prerequisites).
+When you have a defined group of ltrainings that are modules in a program."
+"What is a dynamic learning assignment?
+#LAT",A dynamic assignment processes daily or yearly and attempts to assign the learning objects included to whomever meets the criteria set in the dynamic assignment at the time it processes. This is often used to automatically assign training paths based on the Navigator competence roles.
+What is a group?,"Groups are used to set availability or report filtering.
+To facilitate setting Availability, a number of Groups will be created. These groups can also be used for follow-up in reports. Possible groups are:
+Market Group (market company, Truck Centers & private dealers) ""-mk""
+Dealers only (private dealer and Truck Centers) ""-de""
+Baldo Navigator Job Roles
+Training Coordinators ""-tc""
+Local admins ""–ladm""
+Note that Groups only have active users, why groups are not recommended for certain reports (invoicing, nr of training days etc.). “Retail market” is better to use."
+"What is a learning object?
+#training","A learning object is a training. There are 6 different learning objects available in the system that can be created and administered.
+They are Classroom Training, Curricula, Online Courses, Videos, Materials and Tests. 
+A Learning Object, or LO, can be requested by a user, assigned by a manager or by an administrator. 
+You can report on their completion and combine them in a blended learning approach. Learning Objects are also associated with email communication, different approval workflows and evaluations."
+What is a responsible unit?,"Responsible unit is to specify who is organizing the training, e.g.
+Retail Portugal
+Retail Poland RT
+Retail South Africa VT
+HD/MD Technical
+Bus
+Sales
+Service Market"
+What is a vendor?,"A vendor is a training provider/creator. There are a number of central vendors. You will have your own local vendor IF you are creating local content. Do not confuse vendor with the one delivering the training to the end user, that is Responsible unit! The session will show the local ownership, i.e. where, when and who delivers the training."
+What is a waitlist?,"Waitlists enable users to be placed on a waitlist for a specific session. Manager and TCA can also add users to waitlist. Waitlists are defined at session level.
+The system can either auto-manage the waitlist without any actions by the administrator or the administrator can decide who to be added from the waitlist to the session."
+What is an availability?,"An availability defines which users have the ability to view and access particular learning objects. Availability is set by Organizational Units, we are using Groups. Availability ensures that your users will see only what is truly relevant to them. This enables easier and more customized searching, requesting, and assigning by both managers and administrators."
+What is an equivalence?,"An Equivalence assures that one LO is set equal to an other LO. It is often used in case of tests that are used as a test-out or pre-test, where the user is to be bypassed. It can also be used to set local LO equivalent to central LO. Equivalence is set (one-directional) between ILT or e-learning and test in Course Catalogue. Equivalence is set for all central ILT’s/e-learnings vs tests. Local test can be set equivalent to central training by central team. Local test to local training is to be done by market."
+What is an external training?,An external training is a possibility to add training that is not in Navigator catalogue. External training is added one by one to the end users own training record. Adding external training to a training record is done by the end user or the administrator. The manager/training coordinator can currently (08/22) not assign an external training to their employees.
+What is an interest session?,"This is a way to gather the future training needs. It uses dummy/fake session to setup interest sessions. This enables people to be assigned to this interest list by managers or TC. Based on this, future sessions may be scheduled, and the users can be withdrawn from the interest list and assigned to a real session."
+"What is Certification Enrollment page?
+#Certification","The Certification Enrollment page enables administrators and managers to see an overview of the certification and to view the progress details for each user in the certification. Administrators and managers can remove users from a certification. Administrators and certification owners also have the ability to edit the certification due date. By default, the Certification Enrollment page displays a list of all Active users currently enrolled in the certification and users that are in a Revoked status. To list both Active and Inactive users, click the Include Inactive Users checkbox and click SEARCH."
+"What is certification Proxy Enrollment?
+#Certification",Certification proxy enrollment is used to assign a certification to users' transcripts. The proxy enrollment option for certifications can be accessed from the Learning Assignment Tool.
+"What is the certification framework sequence?
+#Certification","In the Sequence field, enter the sequence number for the item. The sequence number determines the order in which items can be completed. A sequence number of 1 indicates the item must be completed first in the section, and subsequent numbers must be completed in sequential order. If two items have the same sequence number, the two items with the same sequence number can be completed in any order."
+"What is the certification validity for a training?
+#Certification","The validity period for a training item is the time period during which the training item can be completed and used towards completion of the certification. After the validity period has passed, the training item is expired and no longer counts towards the certification requirement. By default, the item can be counted towards multiple certification periods as long as the item is valid. When defining the validity period, you may choose to set no validity period, in which case the item is always valid during the time the certification is available. You may also set the validity period to a period that is relative to the start or end of the certification period. By default, no validity period is defined for all items.
+"
+"What is the difference between Event, Session and parts?","An Event is the name of the training. It answers the question “What is the name of the course and what does it include?”: -> Tech Tool
+A Session is the delivery of the Event. It answers the question “Where will the training be delivered?”: -> Dubai
+Parts are the groups of consecutive training hours. It answers the question “When is the training delivered and how many training hours is it?”: -> Day 1"
+What is the difference between mark as complete and exempt?,"Mark completed = set to complete if student has done the training.
+Exempt = by-pass if student has not done the training, he is excused (exempt will not trigger equivalence)."
+What is the difference between remove and replace?,"Remove: withdraws the user if they are registered to a session and removes the training from the transcript/training record and will be found under ”Removed”.
+Replace: replaces a person with another. The new persons cost center will be charged. "
+What is the difference between standard and dynamic assignment?,"STANDARD LAT
+Training or Training path + Fixed group or fixed list of users = Fixed group or fixed list of users will have Training or Training path assigned once, at day of assignment.
+
+DYNAMIC LAT
+Training or Training path + Dynamic group of users (Dynamic means; if criteria is met, for example: having Baldo job role “Technician”) = Dynamic group of users will have Training or Training path assigned. Navigator will check on daily basis if dynamic criteria is met, than path will be assigned or removed. "
+What is the difference between system default and custom e-mails?,"System default e-mails are pre defined emails and should support most of the needs connected to training, for example:
+Request, approval and registration e-mails
+Reminders of due dates, evaluations
+Changes to trainings, cancellations
+
+Custom e-mails are used for :
+Very specific information or links
+ Sending attachments
+When using custom e-mails you can use a selection from the active and inactive emails. You can change the content, receiver and inactivate emails that you do not want. Note: using custom emails will create your own copy of the email. If there are changes to the standard emails they will not apply to your trainings with custom emails."
+What is the interest tracking?,Interest tracking is an end user function triggered by clicking on the “Notify me of new session”-button on a Training details page. This function is enabled by administrators on the Event properties tab. This is only an end user functionality.It can be used to see the interest from the end users but should not be fully trusted as a training plan - as not all users are using it and it is rarely maintained by the user.
+"What is the scheduling when creating a certification?
+#Certification","In the certification creation process, the Scheduling page enables administrators to configure the schedule for the certification. Specifically, administrators can configure how frequently users will be required to complete the certification and due dates for certification periods. If users are required to renew their certification, then administrators can configure how the renewal periods function, such as how many credits are required and whether users can carry over extra credits from a previous period.
+
+Note: After the certification is created and assigned to a user, the certification cannot be modified aside from updating the title of a certification period. Please verify all aspects of the certification prior to saving."
+What naming convention to be applied when a training is created?,"Online training name: xxxxxx: Title of the training (- brand)
+702002: Basic Air and Brake - Volvo Trucks
+700109: LCV Engine Euro 6 – Renault Trucks
+700500: Impact 
+
+Event name: xxxxxx: Title of the training
+700046: Impact 4x
+704313: Features Online Skilled technician - Volvo Trucks
+700046-FR-VT: Impact 4 x 	(=local version of central event)
+
+Session ID name: xxxxxx: country suffix-City
+700046: AU-Brisbane
+700046: FR-Teams
+
+Test name: xxxxxx: Title of the training - brand (Test)
+700046: Impact 4x (Test)
+704313: Features Online Skilled technician - Volvo Trucks (Test)
+
+Curriculum name: xxxxxx-TP-Brand-Country: Title of the training 
+702100-TP-DUAL-CENTRAL: Basic Service and Repair
+702100-TP-VT-ZA: Basic Service and Repair
+101605-TP-RT-CENTRAL: Workshop Manager
+
+Material / Video: xxxxxx: Title of the training (- brand)
+700383: Optitrack Video - Renault Trucks"
+"When setting the certification date, we can choose between Certification Registration date and Last training item completion date. What is the difference betwwen both?
+#Certification","If this option is set to ""Certification Registration date,"" then the user's certification completion date is set to their certification registration date, regardless of when the user completed the training items that are applied to the certification.
+If this option is set to ""Last training item completion date,"" then the user's certification completion date is set to the date on which the last required training item was completed because the training item completion dates are prior to the certification start date."
+"Where can I find the support documentation?
+#how to guides","
+Click on the link"
+Where can I find the training materials?,"
+Click on the link"
+"While adding a section in a certification framework, it is required to specify a min and max number of credits for required section. What does it means?
+#Certification","Min - This is the minimum number of credits that must be completed in order to complete the section. If all items in the section are optional, this can be set to 0. For example, if the minimum is set to 4, users must complete enough training items to receive at least four credits to satisfy the section requirements. Once the minimum is received, the section is considered complete and the credits within the section can be counted towards any parent sections if applicable. Additional credits may be received up to the maximum for the section. This allows administrators to ensure users are completing enough training items within each section.
+
+Max - This is the maximum number of credits that can be granted within the section. For example, if the maximum is set to 10, users cannot receive more than 10 credits for the section. If they complete training items to accumulate 15 credits for the section, only 10 credits are received for the section. This allows administrators to ensure users are completing a balanced amount of training items within each section."
+Why Data Merge didn't merge all Learning Objects to the Recipient User?,"The Data Merge tool does not merge removed training items from the donor account to the recipient account.
+
+The Data Merge tool does not merge a training item if it already exist on the recipient account; this includes equivalencies, other versions of the training, and if the training is used in a certification.
+If the same training item is listed on both training records, the one in the recipient account remains and the one in the donor account is not merged, regardless of the status or version of either course.
+For sessions, if the recipient account already has the session, then that record remains and no merge occurs. This is regardless of status. If the recipient account is waitlisted in a session and the donor account is registered in the same session, the user retains the status associated with the recipient account.
+If the recipient account has a completed course that is an equivalent to a course in the donor account, the course is not transferred.
+For curricula, if the recipient account has the curriculum on their transcript (prerequisite, stand-alone item, pre-work, post-work, or as part of another curriculum), the curriculum is not transferred. Also, if a learning object (LO) within a curriculum exists on the recipient account's transcript (prerequisite, stand-alone item, pre-work, post-work, or as part of another curriculum), the LO is not transferred. Note: If an LO in the merge is part of ANY curriculum on the donor account, the merge will fail, even if the curriculum is NOT the one being merged."
